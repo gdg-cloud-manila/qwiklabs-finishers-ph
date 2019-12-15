@@ -5,51 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Qwiklabs Finishers | Form</title>
-    <!-- Compiled and minified CSS -->
+    <title>Qwilab Finishers | Home</title>
+      <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="/src/stylesheets/minireset.min.css">
+    <!-- <link rel="stylesheet" href="/node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="/node_modules/minireset.css/minireset.min.css"> -->
 </head>
 
 <body>
-
-    <!-- name
-    profile picture
-    public link
-    select course took
-    - GCP Essentials -->
+    <!-- <h1>Qwiklabs Finishers</h1> -->
     <nav>
         <div class="nav-wrapper blue darken-2">
           <a href="index.html" class="brand-logo center">Logo</a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li><b><a href="finisherslist.html"><span class="yellow-text text-darken-2">Finishers</span></a></b></li>
-            <li class="active"><b><a href="form.html"><span class="yellow-text text-darken-2">Application</span></a></b></li>
+            <li><b><a href="form.html"><span class="yellow-text text-darken-2">Application</span></a></b></li>
             <li><b><a href="collapsible.html"><span class="yellow-text text-darken-2">JavaScript</span></a></b></li>
           </ul>
         </div>
     </nav>
-    <br>
     <div class="row">
-        <div class="input-field col s6">
-            <input id="name" type="text" class="validate">
-            <label for="name">Full Name</label>
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Finisher Name</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Public Link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
         </div>
-        <div class="input-field col s6">
-            <input id="name" type="text" class="validate">
-            <label for="name">Public Link</label>
-        </div>
-    </div>
-    <div class="input-field col s12 m6">
-        <select class="icons">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="" data-icon="#">example 1</option>
-          <option value="" data-icon="#">example 2</option>
-          <option value="" data-icon="#">example 3</option>
-        </select>
-        <label>Badges obtained</label>
       </div>
+    <br>
     <br>
     <br>
     <br>
@@ -89,13 +82,12 @@
           </div>
         </div>
     </footer>
-    
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.4.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.5.0/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.4.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.5.0/firebase-analytics.js"></script>
 
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
