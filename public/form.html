@@ -11,6 +11,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="/src/stylesheets/minireset.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -20,16 +21,18 @@
     public link
     select course took
     - GCP Essentials -->
-    <nav>
-        <div class="nav-wrapper blue darken-2">
-          <a href="index.html" class="brand-logo center">Logo</a>
-          <ul id="nav-mobile" class="left hide-on-med-and-down">
-            <li><b><a href="finisherslist.html"><span class="yellow-text text-darken-2">Finishers</span></a></b></li>
-            <li class="active"><b><a href="form.html"><span class="yellow-text text-darken-2">Application</span></a></b></li>
-            <li><b><a href="collapsible.html"><span class="yellow-text text-darken-2">JavaScript</span></a></b></li>
-          </ul>
-        </div>
-    </nav>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue darken-2">
+            <a href="index.html" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><b><a href="finisherslist.html">Finishers</a></b></li>
+                <li><b><a href="form.html">Application</a></b></li>
+                <li><b><a href="#">Contact Us</a></b></li>
+            </ul>
+            </div>
+        </nav>
+    </div>
     <br>
     <div class="row">
         <div class="input-field col s6">
@@ -37,23 +40,31 @@
             <label for="name">Full Name</label>
         </div>
         <div class="input-field col s6">
-            <input id="name" type="text" class="validate">
+            <input id="plink" type="text" class="validate">
             <label for="name">Public Link</label>
         </div>
     </div>
-    <div class="input-field col s12 m6">
-        <select class="icons">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="" data-icon="#">example 1</option>
-          <option value="" data-icon="#">example 2</option>
-          <option value="" data-icon="#">example 3</option>
-        </select>
-        <label>Badges obtained</label>
-      </div>
+    <div class= "row">
+        <div class="input-field col s12 m6">
+            <select multiple class="icons">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="" data-icon="#">example 1</option>
+            <option value="" data-icon="#">example 2</option>
+            <option value="" data-icon="#">example 3</option>
+            </select>
+            <label>Badges obtained</label>
+        </div>
+    </div>
     <br>
     <br>
-    <br>
-    <br>
+    <div class= "row">
+        <div class="input-field col s12 m6">
+            <label>Profile Picture</label>
+            <br>
+            <br>
+            <input type="file" name="imgup" accept="image/jpeg, image/png">
+        </div>
+    </div>
     <br>
     <br>
     <br>
@@ -65,7 +76,7 @@
     <br>
     <br>
     <footer class="page-footer blue darken-2">
-        <div class="container green darken-2">
+        <div class="container blue darken-2">
           <div class="row">
             <div class="col l6 s12">
               <h5 class="white-text">Footer Content</h5>
@@ -74,19 +85,23 @@
             <div class="col l4 offset-l2 s12">
               <h5 class="white-text">Links</h5>
               <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Google Developer Group</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Ateneo Developer Student Club</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
                 <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
               </ul>
             </div>
+            <div class="col l6 s12">
+              <h5 class="white-text">Affiliated groups</h5>
+              <img class="responsive-img" src= "images/dscloyola_vertical.png" alt="DSC Loyola" align="left"
+              style= "width:150px; height:150px;">
+            </div>
           </div>
         </div>
         <div class="footer-copyright">
-          <div class="container">
-          © 2019 Copyright Text
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-          </div>
+            <div class="container">
+            © 2019 Copyright Google Developers Group
+            </div>
         </div>
     </footer>
     
